@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html class="light" lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Accueil Red Velvet Touch Nails | Salon de Manucure de Luxe</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800&family=Manrope:wght@300;400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#A5002C",
+            "primary-dark": "#7a0021",
+            "accent": "#C9A961",
+            "background-light": "#FAF7F2",
+            "background-dark": "#230f14",
+            "surface-beige": "#F3EEEA",
+            "text-main": "#2D181C",
+            "text-muted": "#8d5e6a",
+          },
+          fontFamily: {
+            "display": ["Epilogue", "sans-serif"],
+            "body": ["Manrope", "sans-serif"],
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "0.75rem",
+            "xl": "1rem",
+            "2xl": "1.5rem",
+            "full": "9999px"
+          },
+          backgroundImage: {
+            "velvet-gradient": "linear-gradient(135deg, #A5002C 0%, #590018 100%)",
+            "gold-gradient": "linear-gradient(45deg, #C9A961 0%, #E3C886 50%, #C9A961 100%)",
+          },
+          boxShadow: {
+            "soft-glow": "0 10px 40px -10px rgba(165, 0, 44, 0.1)",
+            "gold-glow": "0 4px 20px -5px rgba(201, 169, 97, 0.3)",
+          }
+        },
+      },
+    }
+  </script>
+  <style>
+    body { font-family: "Epilogue", sans-serif; }
+    .font-body { font-family: "Manrope", sans-serif; }
+    .material-symbols-outlined {
+      font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+      vertical-align: middle;
+    }
+    .icon-filled { font-variation-settings: "FILL" 1; }
+    html { scroll-behavior: smooth; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #FAF7F2; }
+    ::-webkit-scrollbar-thumb { background: #E3C886; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #C9A961; }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-main antialiased selection:bg-primary selection:text-white flex flex-col min-h-screen">
+  <header class="sticky top-0 z-50 w-full backdrop-blur-md bg-background-light/90 border-b border-accent/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <div class="flex items-center gap-2 group cursor-pointer">
+          <span class="text-primary material-symbols-outlined icon-filled text-3xl group-hover:rotate-12 transition-transform duration-300">spa</span>
+          <div class="flex flex-col">
+            <h1 class="text-xl font-bold tracking-tight text-primary leading-none">RED VELVET</h1>
+            <span class="text-xs tracking-[0.2em] text-accent font-medium uppercase">Touch Nails</span>
+          </div>
+        </div>
+        <nav class="hidden md:flex items-center gap-8">
+          <a class="text-text-main hover:text-primary font-medium text-sm transition-colors relative group" href="#">
+            Accueil
+            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+          </a>
+          <a class="text-text-main hover:text-primary font-medium text-sm transition-colors relative group" href="#services">
+            Nos Services
+            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+          </a>
+          <a class="text-text-main hover:text-primary font-medium text-sm transition-colors relative group" href="#gallery">
+            Galerie
+            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+          </a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <a class="hidden md:flex bg-primary hover:bg-primary-dark text-white px-6 py-2.5 rounded-xl text-sm font-bold transition-all shadow-lg hover:shadow-primary/30 items-center gap-2 group" href="reservation.html">
+            <span>Reserver un rendez-vous</span>
+            <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+          </a>
+          <button class="md:hidden text-text-main p-2" aria-label="Ouvrir le menu">
+            <span class="material-symbols-outlined text-2xl">menu</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="relative w-full overflow-hidden">
+    <div class="absolute top-0 right-0 w-1/3 h-full bg-[#fcece6] rounded-l-full opacity-50 -z-10 translate-x-1/2"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 lg:py-32">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="flex flex-col gap-6 lg:pr-10 order-2 lg:order-1">
+          <div class="flex items-center gap-2 text-accent font-medium tracking-wider text-sm uppercase">
+            <span class="w-8 h-[1px] bg-accent"></span>
+            Soin des ongles Premium
+          </div>
+          <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] text-text-main">
+            La Touche <span class="text-transparent bg-clip-text bg-velvet-gradient">Red Velvet</span>.
+          </h1>
+          <p class="text-lg text-text-muted font-body leading-relaxed max-w-lg">
+            Decouvrez le luxe du soin des ongles dans un environnement serein. Nous allions excellence artistique et hygiene rigoureuse pour offrir a vos mains l elegance qu elles meritent.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 pt-4">
+            <a class="flex items-center justify-center bg-primary hover:bg-primary-dark text-white h-12 px-8 rounded-xl text-base font-bold transition-all shadow-soft-glow hover:shadow-lg hover:-translate-y-0.5" href="reservation.html">
+              Reserver un rendez-vous
+            </a>
+            <a class="flex items-center justify-center bg-white border border-accent/30 hover:border-accent text-text-main h-12 px-8 rounded-xl text-base font-medium transition-all hover:bg-surface-beige" href="#services">
+              Nos Services
+            </a>
+          </div>
+          <div class="flex items-center gap-4 mt-8 pt-8 border-t border-accent/10">
+            <div class="flex -space-x-3">
+              <div class="w-10 h-10 rounded-full border-2 border-white bg-gray-200 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBQuzQoI0FS-2aidbIWVw4cSkeytX0-1FgJHQFtzN8ojMr0cgxBZkbRb5I-50_qnJh-cmqR2dPzcYhaIhekkvDPpdFK1hwjTfQ30Tm2XX0wRwaPJtPF22gM5p5z_T8AWJKiT0JxpbDKrxZYGrw19UKNZDQwydLtwk4l2eG49V_fXRfBVhKp0u_VvmzpcxsTbjxbmu3kY63pxDRQ7feHLMeM9SGM0KAV_wQZl-CEL-qciJ-AfZVyEudAPv-PsxpBDaOmDdJUQGfQH18')"></div>
+              <div class="w-10 h-10 rounded-full border-2 border-white bg-gray-200 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBAk6IuKu8CEXmBCKZ8GE8ha2FYs76JsYgKz41n7YkVlpiBYD5ZWPxpB63IzputStOQX_lLtbbLcFhvShWL1xAsFf4UtqeqAb57OKKBtkJPw8MKEcYW7zc4k0rlG5KdTJWzpLBQm9q_VXfHVQDhHnvIKOxOPFea_jZhIvygtCguCSNelczkLiUBbYvQ68OBl_VtJ38au4E7nKhO8RDF2MEpQ5CDzYr_gA8rQmnrmZxIEIm1DZ1p4PwFvJx585zOo7MgOUB01ncQ0kc')"></div>
+              <div class="w-10 h-10 rounded-full border-2 border-white bg-gray-200 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAf99cxCuhqdCr8SalSBDf5vYx6r3l8Rdv-dVr1KsYbcDvEh9W75zg7LQsN_GRDuavCMYlVC5Emd1S34qiOZFeddnZKjFQZ2CGe-cUrRKLHYRinxgri-zshwgJJdGuoWTpKRyJ01rG2_HlaM8BTLSqWemxlxszyktYiXF-JUMAcGHZW6S-ocHNBIBWja5stPwdIyNjYFRL3jUd7Su2qlTJEx0vKfxRKzzpSsyk-Wm_Opr2kg4gqyqRvZDIYaaH6n8f339ZNQOOgxHc')"></div>
+            </div>
+            <div class="flex flex-col">
+              <div class="flex text-accent text-sm">
+                <span class="material-symbols-outlined icon-filled text-[18px]">star</span>
+                <span class="material-symbols-outlined icon-filled text-[18px]">star</span>
+                <span class="material-symbols-outlined icon-filled text-[18px]">star</span>
+                <span class="material-symbols-outlined icon-filled text-[18px]">star</span>
+                <span class="material-symbols-outlined icon-filled text-[18px]">star</span>
+              </div>
+              <span class="text-xs text-text-muted font-body">Apprecie par plus de 500 clientes</span>
+            </div>
+          </div>
+        </div>
+        <div class="relative order-1 lg:order-2">
+          <div class="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/5] lg:aspect-square">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10"></div>
+            <div class="w-full h-full bg-cover bg-center transition-transform duration-700 hover:scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBbV0mAP3okP-6yqReZeFHVmfVD4jSef4SyKqZttIbTywWR4l5-eQ60IohmGq0EDzP3VrCuz3y_Ni10nNsAyEXenuiOZwQ13Vlqr-MOa4_GtLcSYBA_0dAFCZvtdD9DDDl-l2TvpSDQ_5hk67UJF1bFuFh0g18YA4fLVirUwGCcK7RyuhoLlhIywXG1GHbJfCes-sxr5tLXZRd2bCcXaudva40Wo45ylrysDhIoSvk3sjGACIpOI6Bwj1oJCBqpN0nPnUeQrzJnzNg')"></div>
+          </div>
+          <div class="absolute -bottom-6 -left-6 z-20 bg-white p-4 rounded-xl shadow-gold-glow max-w-[200px] hidden md:block">
+            <div class="flex items-center gap-3 mb-2">
+              <div class="bg-surface-beige p-2 rounded-lg text-primary">
+                <span class="material-symbols-outlined">verified</span>
+              </div>
+              <div>
+                <p class="text-xs text-text-muted uppercase tracking-wide">Qualite</p>
+                <p class="font-bold text-sm">Produits Premium</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-8 flex flex-col items-center text-center" id="services">
+    <span class="text-accent uppercase tracking-widest text-xs font-bold mb-2">Notre Carte</span>
+    <h2 class="text-3xl md:text-4xl font-bold text-text-main">Nos Services</h2>
+    <div class="w-24 h-1 bg-accent mt-4 rounded-full"></div>
+  </div>
+
+  <section class="w-full pb-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white rounded-3xl p-8 md:p-12 border border-accent/20 shadow-soft-glow relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -mr-32 -mt-32"></div>
+        <div class="relative z-10 space-y-2">
+          <div class="flex justify-between items-center group py-6 border-b border-accent/10 hover:border-primary/30 transition-colors">
+            <div class="flex flex-col">
+              <span class="text-xl font-bold text-text-main group-hover:text-primary transition-colors">Manucure Simple</span>
+              <span class="text-sm text-text-muted font-body">Soin essentiel pour une elegance naturelle</span>
+            </div>
+            <div class="flex items-center gap-6">
+              <span class="text-2xl font-bold text-primary">10 EUR</span>
+              <span class="material-symbols-outlined text-accent opacity-0 group-hover:opacity-100 transition-opacity">add_circle</span>
+            </div>
+          </div>
+          <div class="flex justify-between items-center group py-6 border-b border-accent/10 hover:border-primary/30 transition-colors">
+            <div class="flex flex-col">
+              <span class="text-xl font-bold text-text-main group-hover:text-primary transition-colors">Pose Ongles naturels</span>
+              <span class="text-sm text-text-muted font-body">Sublimation et renforcement de vos ongles naturels</span>
+            </div>
+            <div class="flex items-center gap-6">
+              <span class="text-2xl font-bold text-primary">25 EUR</span>
+              <span class="material-symbols-outlined text-accent opacity-0 group-hover:opacity-100 transition-opacity">add_circle</span>
+            </div>
+          </div>
+          <div class="flex justify-between items-center group py-6 border-b border-accent/10 hover:border-primary/30 transition-colors">
+            <div class="flex flex-col">
+              <span class="text-xl font-bold text-text-main group-hover:text-primary transition-colors">Pose Capsules</span>
+              <span class="text-sm text-text-muted font-body">Extensions pour une longueur et une forme parfaites</span>
+            </div>
+            <div class="flex items-center gap-6">
+              <span class="text-2xl font-bold text-primary">30 EUR</span>
+              <span class="material-symbols-outlined text-accent opacity-0 group-hover:opacity-100 transition-opacity">add_circle</span>
+            </div>
+          </div>
+          <div class="flex justify-between items-center group py-6 border-b border-accent/10 hover:border-primary/30 transition-colors">
+            <div class="flex flex-col">
+              <span class="text-xl font-bold text-text-main group-hover:text-primary transition-colors">French et Nails Art</span>
+              <span class="text-sm text-text-muted font-body">Finitions artistiques et designs personnalises sur mesure</span>
+            </div>
+            <div class="flex items-center gap-6">
+              <span class="text-2xl font-bold text-primary">35 EUR</span>
+              <span class="material-symbols-outlined text-accent opacity-0 group-hover:opacity-100 transition-opacity">add_circle</span>
+            </div>
+          </div>
+          <div class="flex justify-between items-center group py-6 hover:border-primary/30 transition-colors">
+            <div class="flex flex-col">
+              <span class="text-xl font-bold text-text-main group-hover:text-primary transition-colors">Depose</span>
+              <span class="text-sm text-text-muted font-body">Retrait professionnel en douceur pour preserver vos ongles</span>
+            </div>
+            <div class="flex items-center gap-6">
+              <span class="text-2xl font-bold text-primary">10 EUR</span>
+              <span class="material-symbols-outlined text-accent opacity-0 group-hover:opacity-100 transition-opacity">add_circle</span>
+            </div>
+          </div>
+        </div>
+        <div class="mt-12 flex justify-center">
+          <a class="bg-primary hover:bg-primary-dark text-white px-10 py-4 rounded-2xl text-lg font-bold transition-all shadow-lg hover:shadow-primary/40 flex items-center gap-3" href="reservation.html">
+            <span class="material-symbols-outlined">calendar_month</span>
+            Reserver un rendez-vous
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="w-full bg-primary text-white py-20 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-20" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBN--PY7RQ-5fRwkQRJPKmxlG5NOqEupr8c05gyaxxPmxU6LZ60i1brmis0VfzZ-BaL7w0PYXJOeEXR1uPA2ZOvZ9noPXf-l1lKhdtH5wCQ3DRLIoi5tRvEP2cMo80r7_ap4ikA3U5RGf9Cnv0Uoo0h4R1dt-3wfErxgfPH1zGLgggWmWStzWWOU1JyN2EoBZSYqD4oKS_OHNNUko2uUx93Pz947gLUuBhQvhgGforvTV4e-gx32o4JXTVfGz_qK62EDCLgfSUlHrI')"></div>
+    <div class="absolute -top-40 -right-40 w-96 h-96 bg-accent/20 rounded-full blur-[100px]"></div>
+    <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-black/20 rounded-full blur-[100px]"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="flex flex-col gap-6">
+          <h2 class="text-4xl lg:text-5xl font-bold leading-tight">La Philosophie Red Velvet</h2>
+          <p class="text-white/80 font-body text-lg leading-relaxed">
+            Nous croyons que le soin des ongles n est pas seulement une routine, mais un rituel. Notre engagement envers <span class="text-accent font-medium">l hygiene</span>, <span class="text-accent font-medium">l art</span> et la <span class="text-accent font-medium">relaxation</span> garantit que chaque visite vous laisse radieuse et confiante.
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
+            <div class="flex gap-4">
+              <div class="w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center shrink-0 border border-white/10">
+                <span class="material-symbols-outlined text-accent">sanitizer</span>
+              </div>
+              <div>
+                <h4 class="font-bold text-lg mb-1">Hygiene Prioritaire</h4>
+                <p class="text-sm text-white/70 font-body">Outils sterilises et protocoles rigoureux pour votre securite absolue.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center shrink-0 border border-white/10">
+                <span class="material-symbols-outlined text-accent">brush</span>
+              </div>
+              <div>
+                <h4 class="font-bold text-lg mb-1">Maitrise Artistique</h4>
+                <p class="text-sm text-white/70 font-body">Techniciennes qualifiees specialisees dans le nail art moderne et precis.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="space-y-4 mt-8">
+              <div class="aspect-[3/4] rounded-2xl overflow-hidden bg-gray-800">
+                <div class="w-full h-full bg-cover bg-center hover:scale-110 transition-transform duration-700" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCBiu9I35KHoat8kpUgOUPFaTbPqK7F7sv-FAsEJfGl5y1A3acqBbZ7-9zzjetLAig1KLRgPCXgY0TvQ-CFO-mPy5L3aUnYqJknsv6XdKJZDe2z7C6NMKYM09Etc-Pe4Pamf04MK37U_qC-fJyR_5KtqiXjo0XtfkRpYGKhYHanuY2JJksc-OqPVl2smwxKkmAeQVMhlrDy0xvZg3IQINp8QteMXRZKJqOLTtfcTYvDijYtY2sKr5cGiUiijxW8LK83lZW3JREhlMo')"></div>
+              </div>
+            </div>
+            <div class="space-y-4">
+              <div class="aspect-[3/4] rounded-2xl overflow-hidden bg-gray-800">
+                <div class="w-full h-full bg-cover bg-center hover:scale-110 transition-transform duration-700" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCONI1dRvO7D5dkYPjX-59hsCB1DFq0xHSw9NERsve_svft3JdDKJKr9tJ5UApESo5myPU83BR4e20h11sg9vf9bV1Fh0XqQte9w-CABPKtTP9t_tDuXSIjyxYpeNuPpIqjbIh74Ws218LnaHTl0TmM2DKkZiDLi1AWYOnIv_0ZogfY0NfRtdsT8vEpvKsPq5mGoyNc760_ZEMv7fSo4kqb3znmpqIAjcq4KFp5ZCW364Qam2ZQvmqUacPt47c_BuhsuKM-_S4fuCg')"></div>
+              </div>
+              <div class="bg-accent/10 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+                <div class="text-3xl font-bold text-accent mb-1">100%</div>
+                <div class="text-sm text-white/80 font-body">Satisfaction Garantie</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-background-light" id="gallery">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-end mb-10">
+        <div>
+          <h2 class="text-3xl font-bold text-text-main mb-2">Suivez-nous</h2>
+          <a class="text-primary font-medium hover:underline flex items-center gap-1" href="https://instagram.com/rvt_nails" target="_blank" rel="noreferrer">
+            @rvt_nails <span class="material-symbols-outlined text-sm">open_in_new</span>
+          </a>
+        </div>
+        <div class="hidden md:block">
+          <p class="text-text-muted font-body italic">Partagez votre style avec notre communaute.</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="group relative aspect-square overflow-hidden rounded-xl cursor-pointer">
+          <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBcGT6ZJhI0nDLCXOR_ekeFsHDiNrG9oxjng9DzKBYzOghtc6ftVvcdKlK3aQGU5ZRa1a1FXMC2hNF5Vzr9A802X6I5B4DP6Vo5N-VUwsF0a6c_DlyX6m86xKjvQafLVIiulh8ScUNEN9YMJfz_DLHvi2WVO4YSrnVT_6Z9XTcnyr52A1k-DTFcnRoO9rvxTn-67lX_g3YOb7-DT5kOIS9FOCNOi3ub2FvWTDXeqWH1leDaagu3QFtG6iB5XpnXUgtdSf852R8xZGY')"></div>
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+            <span class="material-symbols-outlined">favorite</span>
+          </div>
+        </div>
+        <div class="group relative aspect-square overflow-hidden rounded-xl cursor-pointer">
+          <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCAsvHfPOSUVa04lP0T0bzGrFPkQtfwz6qb4dHNpevSo6cOsLOiChPoH_gDJkecwuOH8NEC3V17phrUkqt5_vuEBRnpHZPuHsKXu62d0K_AXTAyAfwJ7Nbx7FWX7d1-g8QZ854BsWpnYV5BXZ_RmDwWB-ZX_O_qKnDWcn6GPS4YuoeIJ-TU5RPcgd_iBwzlylMxqTH90NYWflAv2gLKu43R3f3TBiY_5dEHWrnRLX5FNNhDZK9hs8b73tSMbvCmCdezmAqElCBJf8I')"></div>
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+            <span class="material-symbols-outlined">favorite</span>
+          </div>
+        </div>
+        <div class="group relative aspect-square overflow-hidden rounded-xl cursor-pointer">
+          <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDXnizLBKhVWEpfIW6xXpgLCjrpzjq3d7fXUOiRtpyfXv8FXGQxQbCrWnyN5O3tUXQRgJhI0ZfMnOhCi8NPna7KEDBiEdOvrZoDzWtnzcF_dbBFf0v4gHdW-nQxcSDgWCJd3eumPhf0B4vdLyxFmjQRvMAQiQblzgc-U877VQGG-sgXTmOXeqnn2GvHJ_PlOCBZpPNNQCoCfSoztaJbYNFllFQXsscivoywxpjVcTJdGIKY1KLxnVY4XD9qJcGyms5R0VDEnHwezH0')"></div>
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+            <span class="material-symbols-outlined">favorite</span>
+          </div>
+        </div>
+        <div class="group relative aspect-square overflow-hidden rounded-xl cursor-pointer">
+          <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCAVwPmYNXWJRabMvFN5kh2xz9e9-T-RnyySXGf-eYaFm3dxTD1VkH4xjA_aSH-whLLhdaEXny8L7DHC_eVSUMS1KWuNQKhAMlL8bteZPArj3CL24FL2sv2vPlcRoFRK5X9P6x6evLIK41_RdfOI4ZnEtr5g_94WQ9E6wzPrQ4wRyHKrvhgAt0cm_wlYkjSdk_yRQakJ0x5RLBDvRfkc6sPzw5fn9zhS1yoP0pST8YCHVYHHBpUotRwgX98yBb_xJuV-jm8gu9LOdw')"></div>
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+            <span class="material-symbols-outlined">favorite</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-surface-beige border-t border-accent/20 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <div class="col-span-1 md:col-span-1">
+          <div class="flex items-center gap-2 mb-4">
+            <span class="text-primary material-symbols-outlined text-3xl">spa</span>
+            <h2 class="text-lg font-bold text-primary tracking-tight">RED VELVET</h2>
+          </div>
+          <p class="text-text-muted font-body text-sm leading-relaxed mb-6">
+            Elever le soin des ongles au rang d art. Rejoignez-nous pour un moment de luxe dans votre semaine bien remplie.
+          </p>
+          <div class="flex gap-4">
+            <a class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors border border-accent/20" href="#">
+              <span class="material-symbols-outlined text-sm">thumb_up</span>
+            </a>
+            <a class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors border border-accent/20" href="#">
+              <span class="material-symbols-outlined text-sm">photo_camera</span>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h3 class="font-bold text-text-main mb-4">Nos Services</h3>
+          <ul class="space-y-2 text-sm text-text-muted font-body">
+            <li><a class="hover:text-primary transition-colors" href="#services">Manucure Simple</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#services">Pose Ongles naturels</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#services">Pose Capsules</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#services">French et Nails Art</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#services">Depose</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-text-main mb-4">Contact</h3>
+          <ul class="space-y-3 text-sm text-text-muted font-body">
+            <li class="flex items-start gap-2">
+              <span class="material-symbols-outlined text-accent text-lg">location_on</span>
+              <span>Quartier de la Mode<br />Paris, France</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-accent text-lg">call</span>
+              <span>@rvt_nails</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-accent text-lg">mail</span>
+              <span>contact@rvtnails.com</span>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-text-main mb-4">Horaires</h3>
+          <ul class="space-y-2 text-sm text-text-muted font-body">
+            <li class="flex justify-between"><span>Lun - Ven</span> <span>09:00 - 19:00</span></li>
+            <li class="flex justify-between"><span>Samedi</span> <span>10:00 - 18:00</span></li>
+            <li class="flex justify-between text-primary font-bold"><span>Dimanche</span> <span>Ferme</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-accent/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-xs text-text-muted font-body">© 2024 Red Velvet Touch Nails. Tous droits reserves.</p>
+        <div class="flex gap-6 text-xs text-text-muted font-body">
+          <a class="hover:text-primary" href="#">Politique de Confidentialite</a>
+          <a class="hover:text-primary" href="#">Conditions d Utilisation</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

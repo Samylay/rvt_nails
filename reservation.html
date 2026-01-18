@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html class="light" lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Reservation de Rendez-vous | Red Velvet Touch Nails</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#a3002c",
+            "background-light": "#f8f5f6",
+            "background-dark": "#230f14",
+            "gold-accent": "#C9A961",
+            "cream-panel": "#F3EEEA",
+            "cream-panel-dark": "#2d1b20",
+            "text-main": "#181012",
+            "text-muted": "#8d5e6a"
+          },
+          fontFamily: {
+            "display": ["Epilogue", "sans-serif"],
+            "body": ["Manrope", "sans-serif"]
+          },
+          borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          boxShadow: {
+            "soft-glow": "0 20px 40px -10px rgba(163, 0, 44, 0.1)",
+            "card": "0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03)"
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+    }
+    .filled-icon {
+      font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+    }
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #e5e7eb;
+      border-radius: 10px;
+    }
+    .dark ::-webkit-scrollbar-thumb {
+      background: #4a3b3e;
+    }
+    .bg-texture-noise {
+      background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuCbVFIAH1w2AiyhDERmAV5hHeU3CpRhGXVHXV9mHG5BRnU213lwN0Fl7624PSPLdo_PonAJgw4b_Agy1w2z66qSSlk3qW72aZq9QdW5PhJrISIm_OHWjZwKeSHTeVFaufxRKePLeTgoX1obWf0JCfVbeXmP4dAe04r-0VEwKHlajb3fm2oTDbvFXe657TafFSe6UurLKmHJ1YHT3ICpVw6qtdjBRTt06KczDQtXrLXiwPnL0743InQWR4P2hG-zZU96jPHSoAdawtA);
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-body text-text-main antialiased min-h-screen flex flex-col">
+  <nav class="sticky top-0 z-50 w-full bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-stone-100 dark:border-stone-800">
+    <div class="max-w-[1440px] mx-auto px-6 lg:px-10 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="size-8 text-primary flex items-center justify-center">
+          <span class="material-symbols-outlined filled-icon text-3xl">spa</span>
+        </div>
+        <h1 class="font-display font-bold text-xl tracking-tight text-text-main dark:text-white">Red Velvet Touch</h1>
+      </div>
+      <a class="group flex items-center gap-2 text-sm font-medium text-text-main dark:text-stone-300 hover:text-primary transition-colors" href="index.html">
+        <span>Retour a l accueil</span>
+        <span class="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1">arrow_forward</span>
+      </a>
+    </div>
+  </nav>
+
+  <main class="flex-grow flex items-start justify-center p-4 md:p-8 lg:py-12">
+    <div class="w-full max-w-6xl bg-white dark:bg-[#1a0b0e] rounded-xl shadow-soft-glow overflow-hidden border border-stone-100 dark:border-stone-800 flex flex-col lg:flex-row min-h-[750px]">
+      <aside class="w-full lg:w-[35%] bg-cream-panel dark:bg-cream-panel-dark relative flex flex-col border-r border-stone-100 dark:border-stone-800/50">
+        <div class="absolute inset-0 bg-texture-noise pointer-events-none opacity-50 mix-blend-multiply"></div>
+        <div class="relative z-10 p-8 lg:p-10 flex flex-col h-full">
+          <div class="mb-10">
+            <p class="text-gold-accent font-bold text-xs uppercase tracking-widest mb-3">Prestations @rvt_nails</p>
+            <h2 class="font-display text-3xl lg:text-4xl font-bold text-text-main dark:text-white leading-tight mb-4">
+              Reservation de<br />Rendez-vous
+            </h2>
+            <p class="text-text-muted dark:text-stone-400 leading-relaxed text-sm">
+              Selectionnez votre prestation pour voir les creneaux disponibles. Nous avons hate de sublimer vos mains.
+            </p>
+          </div>
+          <div class="flex-grow">
+            <div class="flex items-center gap-2 mb-6 border-b border-primary/10 pb-3">
+              <span class="material-symbols-outlined text-primary text-xl">content_cut</span>
+              <h3 class="font-display font-bold text-lg text-text-main dark:text-white">Nos Services</h3>
+            </div>
+            <div class="space-y-5" id="service-list">
+              <button class="w-full text-left flex justify-between items-baseline group rounded-lg px-3 py-2 transition-colors hover:bg-white/60 dark:hover:bg-white/5 service-option" data-service="manucure-simple" data-url="https://calendly.com/layaida-samy/nail-thingy-101">
+                <div class="flex flex-col">
+                  <span class="font-display font-medium text-text-main dark:text-stone-200 group-hover:text-primary transition-colors">Manucure Simple</span>
+                  <span class="text-xs text-text-muted dark:text-stone-400">Soin express des ongles</span>
+                </div>
+                <div class="text-right">
+                  <p class="text-sm font-bold text-gold-accent">10 EUR</p>
+                </div>
+              </button>
+              <button class="w-full text-left flex justify-between items-baseline group rounded-lg px-3 py-2 transition-colors hover:bg-white/60 dark:hover:bg-white/5 service-option" data-service="pose-ongles-naturels" data-url="https://calendly.com/layaida-samy/pose-ongles-naturels">
+                <div class="flex flex-col">
+                  <span class="font-display font-medium text-text-main dark:text-stone-200 group-hover:text-primary transition-colors">Pose Ongles naturels</span>
+                  <span class="text-xs text-text-muted dark:text-stone-400">Renforcement et gainage</span>
+                </div>
+                <div class="text-right">
+                  <p class="text-sm font-bold text-gold-accent">25 EUR</p>
+                </div>
+              </button>
+              <button class="w-full text-left flex justify-between items-baseline group rounded-lg px-3 py-2 transition-colors hover:bg-white/60 dark:hover:bg-white/5 service-option" data-service="pose-capsules" data-url="https://calendly.com/layaida-samy/pose-capsules">
+                <div class="flex flex-col">
+                  <span class="font-display font-medium text-text-main dark:text-stone-200 group-hover:text-primary transition-colors">Pose Capsules</span>
+                  <span class="text-xs text-text-muted dark:text-stone-400">Rallongement classique</span>
+                </div>
+                <div class="text-right">
+                  <p class="text-sm font-bold text-gold-accent">30 EUR</p>
+                </div>
+              </button>
+              <button class="w-full text-left flex justify-between items-baseline group rounded-lg px-3 py-2 transition-colors hover:bg-white/60 dark:hover:bg-white/5 service-option" data-service="french-nail-art" data-url="https://calendly.com/layaida-samy/french-nail-art">
+                <div class="flex flex-col">
+                  <span class="font-display font-medium text-text-main dark:text-stone-200 group-hover:text-primary transition-colors">French et Nails Art</span>
+                  <span class="text-xs text-text-muted dark:text-stone-400">Decorations personnalisees</span>
+                </div>
+                <div class="text-right">
+                  <p class="text-sm font-bold text-gold-accent">35 EUR</p>
+                </div>
+              </button>
+              <button class="w-full text-left flex justify-between items-baseline group rounded-lg px-3 py-2 transition-colors hover:bg-white/60 dark:hover:bg-white/5 service-option" data-service="depose" data-url="https://calendly.com/layaida-samy/depose">
+                <div class="flex flex-col">
+                  <span class="font-display font-medium text-text-main dark:text-stone-200 group-hover:text-primary transition-colors">Depose</span>
+                  <span class="text-xs text-text-muted dark:text-stone-400">Retrait en douceur</span>
+                </div>
+                <div class="text-right">
+                  <p class="text-sm font-bold text-gold-accent">10 EUR</p>
+                </div>
+              </button>
+            </div>
+          </div>
+          <div class="mt-10 pt-6 border-t border-stone-200 dark:border-stone-700/50">
+            <div class="bg-white/60 dark:bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-gold-accent/20 flex items-center gap-4">
+              <div class="size-10 rounded-full bg-background-light dark:bg-stone-800 flex items-center justify-center text-primary shrink-0">
+                <span class="material-symbols-outlined">call</span>
+              </div>
+              <div>
+                <p class="font-display font-bold text-sm text-text-main dark:text-white">Besoin d aide ?</p>
+                <p class="text-xs text-text-muted dark:text-stone-400">Contactez @rvt_nails</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <section class="w-full lg:w-[65%] bg-white dark:bg-[#1E1114] p-6 lg:p-12 flex flex-col" id="booking">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-8 pb-6 border-b border-stone-100 dark:border-stone-800">
+          <div>
+            <h2 class="font-display text-2xl font-bold text-text-main dark:text-white">Selectionnez une date et heure</h2>
+            <p class="text-sm text-text-muted dark:text-stone-400 mt-1">Fuseau horaire : Europe/Paris (CET)</p>
+          </div>
+          <div class="mt-4 sm:mt-0 flex gap-2">
+            <a class="size-9 rounded-full border border-stone-200 dark:border-stone-700 flex items-center justify-center hover:bg-stone-50 dark:hover:bg-stone-800 transition-colors text-text-main dark:text-stone-300" href="#booking" aria-label="Afficher le calendrier">
+              <span class="material-symbols-outlined text-lg">calendar_month</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="flex-1">
+          <div class="rounded-2xl border border-stone-100 dark:border-stone-800 bg-background-light/60 dark:bg-[#1a0b0e] shadow-card overflow-hidden">
+            <div class="p-4 border-b border-stone-100 dark:border-stone-800 bg-white/70 dark:bg-[#1a0b0e]">
+              <p class="text-xs text-text-muted uppercase tracking-widest">Calendly</p>
+              <p class="text-sm text-text-main dark:text-stone-200" id="selected-service-label">Service: Manucure Simple</p>
+            </div>
+            <div id="calendly-container" style="min-width:320px;height:700px;"></div>
+          </div>
+        </div>
+
+        <div class="mt-auto pt-8 flex items-center justify-center gap-2 opacity-40 hover:opacity-100 transition-opacity">
+          <span class="text-[10px] uppercase font-bold text-text-muted">Propulse par Calendly</span>
+          <div class="size-2 rounded-full bg-stone-300"></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="bg-white dark:bg-background-dark py-6 border-t border-stone-100 dark:border-stone-800">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-text-muted">
+      <p>© 2024 Red Velvet Touch Nails. Tous droits reserves.</p>
+      <div class="flex gap-6">
+        <a class="hover:text-primary transition-colors" href="#">Politique de Confidentialite</a>
+        <a class="hover:text-primary transition-colors" href="#">Conditions d Utilisation</a>
+        <a class="hover:text-primary transition-colors" href="#">Mentions Legales</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  <script>
+    const serviceButtons = Array.from(document.querySelectorAll(".service-option"));
+    const label = document.getElementById("selected-service-label");
+    const container = document.getElementById("calendly-container");
+
+    const urlMap = new Map(serviceButtons.map((button) => [button.dataset.service, button.dataset.url]));
+    const defaultService = serviceButtons[0]?.dataset.service || "";
+
+    const getServiceFromQuery = () => {
+      const params = new URLSearchParams(window.location.search);
+      return params.get("service");
+    };
+
+    const setActiveService = (serviceKey) => {
+      serviceButtons.forEach((button) => {
+        const isActive = button.dataset.service === serviceKey;
+        button.classList.toggle("ring-2", isActive);
+        button.classList.toggle("ring-primary/40", isActive);
+        button.classList.toggle("bg-white/80", isActive);
+        button.classList.toggle("dark:bg-white/10", isActive);
+      });
+    };
+
+    const loadCalendly = (url) => {
+      container.innerHTML = "";
+      if (!url || !window.Calendly || !window.Calendly.initInlineWidget) {
+        return;
+      }
+      window.Calendly.initInlineWidget({ url, parentElement: container });
+    };
+
+    const selectService = (serviceKey) => {
+      const url = urlMap.get(serviceKey) || urlMap.get(defaultService);
+      const activeButton = serviceButtons.find((button) => button.dataset.service === serviceKey) || serviceButtons[0];
+      if (activeButton) {
+        label.textContent = `Service: ${activeButton.querySelector("span").textContent.trim()}`;
+      }
+      setActiveService(activeButton?.dataset.service || defaultService);
+      loadCalendly(url);
+    };
+
+    serviceButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        selectService(button.dataset.service);
+      });
+    });
+
+    window.addEventListener("load", () => {
+      const requestedService = getServiceFromQuery();
+      selectService(urlMap.has(requestedService) ? requestedService : defaultService);
+    });
+  </script>
+</body>
+</html>
